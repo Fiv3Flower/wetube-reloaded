@@ -1,7 +1,7 @@
 extends base.pug
 
-block head 
-    title Watch | Wetube
-
 block content
-    h1 Watch video!
+    p=video.description
+    a(href=`${video.id}/edit`) Edit Video &rarr;
+    small=video.createdAt
+    
